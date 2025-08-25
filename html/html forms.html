@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #thead th{
+            
+            background-color: rgb(217, 199, 234);
+        }
+
+        .col{
+            border-color: rgb(26, 67, 192);
+            color:rgb(26, 67, 192) ;
+        }
+    </style>
+
+</head>
+<body>
+    <table border="1px" id="thead">
+        <tr>
+            <th style="width: 103px;">Name</th>
+            <th >value</th>
+        </tr>
+
+        <tr>
+            <td style="width: 103px;">Name</td>
+            <td><input type="text" placeholder="enter you name"></td>
+        </tr>
+        <tr>
+            <td rowspan="">sex</td>
+            <td><input type="radio">male <br>
+                    <input type="radio">female
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>Eye Color </td>
+            <td><select name="Color" id="">
+                <option value="">green</option>
+                <option value="">red</option>
+                <option value="">blue</option>
+                <option value="">black</option>
+                </select> 
+            </td>    
+        </tr>
+
+        <tr>
+            <td colspan="2">decribe your information: <br> <textarea name="information" id="" style="width: 250px;height: 100px;"></textarea></td>
+            
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button>enter your information</button></td>
+            </tr>
+
+    </table>
+
+    <div></div>
+<br><br>
+    
+
+<table border="0"  style="text-align: left;" cellspacing="10px">
+    <tr>
+        <th>User Name</th>
+        <td><input type="text" class="col"></td>
+    </tr>
+    <tr>    <th>password</th>
+        <td><input type="password" class="col"></td>
+    </tr>
+
+    <tr>
+        <th>City of Element</th>
+        <td><input type="text" class="col"></td>
+
+    </tr>
+    <tr>
+        <th>web Server</th>
+        <td> <select name="" class="col" >
+           
+            <option value="" >
+                --Choose a service-- 
+            </option>
+            <option value="">
+                apache 
+            </option>
+            <option value="">
+                IIS 
+            </option>
+            <option value="">
+                NGINX 
+            </option>
+            
+            <option value="">
+                LiteSpeed 
+            </option>
+
+
+        </select> 
+    </td>
+    </tr>
+
+    <tr>
+       <td> please sepcify your role </td>
+       <td><input type="radio" name="role" class="col">Admin <br>
+       <input type="radio" name="role" class="col"> Engineer <br>
+       <input type="radio" name="role" class="col"> Manager <br>
+       <input type="radio" name="role" class="col"> Guest     
+    </td>
+
+    </tr>
+
+    <tr>
+        <th> Single Sign -on <br>to the following </th>
+        <td><input type="checkbox" name="Mail" class="col">Mail <br>
+            <input type="checkbox" name="pay roll" class="col">pay roll <br>
+            <input type="checkbox" name="Self service" class="col">self service</td> 
+    </tr>
+
+    <tr style="text-align: center;" >
+        <td><button type="submit">login </button></td>
+        <td style="text-align: left;"><button type="reset">reset </button></td>
+    </tr>
+
+</table>
+
+<br><br>
+
+
+  <h2>User Registration Form Demo</h2>
+  <p>Form Validated Using Javascript</p>
+
+  <form border="1px solid">
+    <label>First Name:</label>
+    <input type="text" name="fname"><br><br>
+
+    <label>Last Name:</label>
+    <input type="text" name="lname"><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email"><br><br>
+
+    <label>Re-enter Email:</label>
+    <input type="email" name="reemail"><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password"><br><br>
+
+    <label>Birthday:</label>
+    <select name="day">
+      <option>Day</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <!-- Continue till 31 -->
+    </select>
+
+    <select name="month">
+      <option>Month</option>
+      <option>January</option>
+      <option>February</option>
+      <option>March</option>
+      <option>April</option>
+      <option>May</option>
+      <option>June</option>
+      <option>July</option>
+      <option>August</option>
+      <option>September</option>
+      <option>October</option>
+      <option>November</option>
+      <option>December</option>
+    </select>
+
+    <select name="year">
+      <option>Year</option>
+      <option>2000</option>
+      <option>2001</option>
+      <option>2002</option>
+      <option>2003</option>
+      <!-- Add more years -->
+    </select>
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+
+</body>
+</html>
+
