@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Beginner Level:
+// 1. Write a script to print all array values in the console.
+
+// ar=[4,2,5,21,1,4]
+
+// ar.forEach(function (a,b) {
+// console.log(a);
+// });
+
+// 2. Print all the array values using a for loop.
+// o Input: [23, 34, 54, 0, 4, 7] → Output: 23 34 54 0 4 7
+   
+// var input=[23, 34, 54, 0, 4, 7]
+    
+//     input.forEach(function (a,b) {
+    
+//         console.log(a);
+     
+
+
+// })
+
+// 3. Print all numbers in an array except the first element.
+// o Input: [23, 34, 54, 0, 4, 7] → Output: 34 54 0 4 7
+    // var a= [23, 34, 54, 10, 4,34, 7]
+   
+    // a.forEach(function(number,index){
+    //     if(index!==0){
+    //         //console.log(number);
+            
+    //     }
+    // })
+
+
+// 4. Print all elements in an array except the last element.
+        //var a= [23, 34, 54, 10, 4, 7]
+    //          a.forEach(function(number,index){
+    //     if(index!==a.length-1){
+    //        // console.log(number);
+            
+    //     }
+    // })
+
+// o Input: [23, 34, 54, 0, 4, 7] → Output: 23 34 54 0 4
+// 5. Print all numbers in reverse order (last index to first index).
+// o Input: [23, 34, 54, 0, 4, 7] → Output: 7 4 0 54 34 23
+    
+    // a.forEach(function(number,index){
+
+    //     //console.log(a[a.length-index-1]);    
+    // })
+
+// 6. Print the first 4 elements in an array.
+    // a.forEach(function(number,index){     
+    //     if(index <= 3){
+    //        // console.log(number);    
+    //     }
+    // })
+
+// 7. Store an array into another array (copy array).
+// o Input: ar = [23, 34, 54, 10, 4, 7] → Output: br = [23, 34, 54, 10, 4, 7]
+
+        // var b=[]
+        // a.forEach(function(number,index){
+        // b[index]=a[index]
+        // console.log(b);
+        // })
+
+        //  console.log(b);
+
+// 8. Print only the last 4 elements of an array.
+// o Input: [23, 34, 54, 0, 4, 7] → Output: 54 0 4 7
+
+        // a.forEach(function(number,index){            
+               
+        //     if(index>=a.length-4){
+
+        //         console.log(number);
+                
+        //     }
+
+        // })
+
+// 9. Sort an array in ascending order.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 4 7 10 23 34 54
+    // console.log(a);
+     
+        // a.forEach(function(number,index){  
+                    
+        //     a.forEach(function(n,i){
+            
+        //         if(a[i]>a[i+1]){
+        //             var temp = a[i]
+        //             a[i]=a[i+1]
+        //             a[i+1]=temp
+        //         }
+        //     })         
+        // })
+            //console.log(a);
+                //------------or---------------
+            //   s=a.sort(function(a,b){
+            //         if(a>b){
+            //             return 1
+            //         }
+            //         else{return -1}
+            //     })
+
+            //     console.log(s);
+                
+        
+// 10. Print only even numbers from an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 34 54 10 4
+
+    //  var s= a.filter(function(number, index){
+
+    //         if(number%2==0){
+    //             return true
+                
+    //         }
+    //         else{return false }
+
+    //     })
+
+    //     console.log(s);
+        
+
+// 11. Print only odd numbers from an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 23 7
+// var s=  a.filter(function(number, index){
+
+//             if(number%2!==0){
+//                return true 
+//             }
+
+//         })
+
+//         console.log(s );
+        
+// 12. Print all the numbers from the last index to the first index except the first element.
+        // console.log(a);
+
+        // a.forEach(function(number,index){
+
+        //     if(index!==0){
+                
+        //         console.log(number);
+                
+        //     }
+
+        // })
+        
+
+// 13. Print all the numbers from the last index to the first index except the last element.
+// Intermediate Level:
+// 12. Find the minimum number in an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 4
+//      console.log(a);
+     
+// var s= a.reduce(function(a,b){
+// console.log(a,b);
+// if(a<b){
+//     return a
+    
+    
+// }
+// else{return b
+    
+// }
+    
+// },)
+
+// console.log(s);
+
+
+// 13. Find the maximum number in an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 54
+
+// var s= a.reduce( function(number,index){
+
+//         if(number>index){
+//             return number
+//         }
+        
+//         else{
+//             return index
+//         }
+// })
+
+//             console.log(s);
+            
+// 14. Sum all elements in an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 132
+    // var s = a.reduce(function(a,b){
+    //     console.log(a,b);
+        
+    //     return a+b
+
+    // })
+    // console.log(s);
+    
+
+// 15. Find the average of all elements in an array.
+// o Input: [23, 34, 54, 10, 4, 7] → Output: 22
+        // var s= a.reduce(function(a,b){
+        //     //console.log(d);
+            
+        //     var n= (a+b)
+      
+        //     return n
+          
+        // } )
+
+        // console.log(s/(a.length));
+        
+
+//16. Find all numbers greater than a given number.
+// Input: [23, 34, 54, 10, 4, 7], Threshold: 20 → Output: 23, 34, 54
+
+// var s= a.filter(function(a,b){
+
+//     if(a > 20){
+        
+//         return a
+        
+//     }
+
+  
+// })
+
+// console.log(s);
+
+// 17. Search if a number exists in an array.
+// o Input: [23, 34, 54, 10, 4, 7], Query: 34 → Output: true
+
+// var s = a.some(function(s,i){
+
+//     if(s==34){
+//         return true
+//     }
+
+
+
+// })
+
+// console.log(s);
+
+// 18. Find the total number of times an element appears in an array.
+// o Input: [23, 34, 54, 10, 34, 7, 23], Query: 34 → Output: 2
+//     var a= [23, 34, 54, 10, 4,34, 7]
+// count= 0
+// var s = a.filter(function(s,i){
+//     if(s===34){
+// count++
+//         return true    
+//     }
+// })
+// console.log(count);
+
+// 19. Print the index of a given element.
+// o Input: [23, 34, 54, 10, 4, 7], Query: 34 → Output: 1
+        // a=[23, 34, 54, 10, 4, 7]
+        // query= 34
+        // a.filter(function(a,b){
+       
+        //     if(a==query){
+        //         return query[b]
+        //     }    
+        // })
+        // console.log(query);
+
+// 20. Eliminate duplicates in an array.
+// o Input: [23, 34, 54, 10, 34, 7, 23] → Output: [23, 34, 54, 10, 7]
+   
+
+
+// 21. Create a duplicate array for a given array.
+// 22. Print all even numbers in an array 
+
+   </script>
+</body>
+</html>

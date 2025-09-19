@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Strings Assignments:
+
+
+        // Beginner Level:
+        // 1. Reverse of a number using toString, split, reverse, and join methods.
+
+        var a = "surya vamshi"
+        var b = ""
+        // for(var i=a.length-1; i>=1;i-- ){
+
+        // console.log(a[i])
+
+        // b=b+a[i]
+        // }
+        // console.log(b)
+
+        //-------------(or)-----------------------------------------------------------
+
+        // var b=a.split(" ") 
+
+        // b= b.reverse()
+        // b=b.join("")
+        // console.log(b);
+
+
+
+        // 2. Find the number of digits of a given number using toString() and the length
+        // property.
+        // b=1223456
+        // b=b.toString()
+        // console.log(b.length);
+
+
+
+
+
+
+        // 3. Write a program to convert all characters in a string to uppercase and print the
+        // modified string.
+        // var a= "krishna"
+        // var b= a.toUpperCase()
+        // console.log(b);
+
+        // 4. Write a program to print the number of characters in a string.
+        // Example: Input: 'Hello' → Output: 5
+
+        //    var input= 'Hello'
+        //     console.log(input.length)
+
+
+        // 5. Remove all spaces from a given string.
+        // var int ="hello world   hello surya   vamshi"
+        // b=""
+        // for(var i =0; i<=int.length-1; i++ ){
+
+        //     if(int[i]!=" "){
+        //         b=b+int[i]
+        //     }
+        //     }
+        //     console.log(b)
+
+
+
+
+        // 6. Remove single spaces from a given sentence.
+        // var int ="hello world   hello surya   vamshi"
+        //     b=""
+        //     for(var i =0; i<=int.length-1; i++ ){
+
+        //         if(int[i]!==" "){
+        //             b=b+int[i];
+        //         }
+        //     }
+        //     console.log(b)
+
+
+        // 7. Write a program to search for a string in a sentence (case insensitive).
+
+        // var int ="hello world   hello surya   vamshi"
+        //     var b= int.search('o')
+
+        //     console.log(b);
+
+        // 8. Write a program to convert a sample sentence string into an array of words.
+        // Example: Input: 'Hello World' → Output: ['Hello', 'World']
+        // var input = 'Hello World'
+
+        // var b = input.split(" ")
+
+        // console.log(b);
+
+
+// ----------------------------------------------------------------------------------------------------------
+// Intermediate Level:
+// 9. Print the number of words in a given string.
+
+//          var int ="hello world   hello surya   vamshi"
+         
+//         var count=0
+//             var b= int.split(" ")   
+
+//         for(var i =0; i<=b.length-1;i++ ){
+//             if (b[i]!==""){
+//                 count++
+//             }
+            
+//         }
+                              
+//   console.log(count);
+
+
+// 10. Write a program to eliminate all numeric characters from a string.
+// Example: Input: 'Q1STR5684A' → Output: 'QSTRAK'
+        // var input= 'Q1STR5684A'
+        // var b=" "
+        // for(var i = 0 ; i<=input.length-1; i++){
+        //     if(input.charCodeAt(i)>=65 && input.charCodeAt(i)<=90){
+        //         console.log(input[i]);
+                
+        //     }
+        // }
+
+// 11. Write a program to print only numeric characters from a string.
+// Example: Input: 'Q1STR5684AK' → Output: '15684'
+
+//         var input =  'Q1STR5684A'
+//         var b= ""
+//         for(var i=0; i<=input.length-1;i++ ){
+//             if(input.charCodeAt(i)>=48 && input.charCodeAt(i)<=57){
+//                 b=b+input[i]
+//             } 
+//         }
+// console.log(b);
+
+// 12. Check if a given string is a valid Gmail ID.
+
+// 13. Write a program to count all alphabets in a given string (not words).
+// var a="praveengubbala"
+// count =0
+// console.log(a);
+// count=0
+// for(var i= 0 ; i<=a.length-1; i++){
+// if(a.charCodeAt(i)>=97  && a.charCodeAt(i)<=122){
+//     count=  count+1
+// }
+    
+// }
+// console.log(count);
+
+// 14. Write a program to sort the characters of a given string alphabetically.
+// Example: Input: 'praveen' → Output: 'aeenprv'
+// 15. Eliminate duplicate characters in a given string.
+// Example: Input: 'praveengubbala' → Output: 'pravengubl'
+// var a=  'praveengubbala'
+// b= ""
+// c =0
+// for(var i =0; i<a.length-1;i++){
+
+// count=0
+// for(var o=0; o<=b.length-1; o++ ){
+//     if(a[i]==b[o]){
+//         count++
+//     }
+// }
+
+// if(count==0){
+//     b=b+a[i]
+// }
+// }
+
+// console.log(b);
+
+// 16. Write a program to print all words in a string in alphabetical order.
+
+
+// 17. Write a program to print unique words and count repetitions in a string.
+var a ="welcome to javascript and welcome to coding"
+var b= a.split(" ")
+console.log(b);
+u=" "
+
+for(var i = 0; i<=b.length-1;i++){
+    count=0
+   
+    
+for(var o= 0 ; o<=u.length-1; o++ ){
+
+if( b[i]==u[o] ){
+
+    count++
+}
+
+}
+
+if(count==0){
+
+   
+    u=u+b[i]
+}
+
+}
+    
+
+
+console.log(u);
+
+    </script>
+</body>
+
+</html>

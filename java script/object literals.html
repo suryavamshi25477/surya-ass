@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+//         1Object property access assignment
+//         1.Given an object: 
+// var person = {
+//             "firstName": "Harry",
+//             "lastName": "Potter",
+//             "gender": "male",
+//             "skill": "ReactJS",
+//             "expertise": "Beginner",
+//         }
+
+
+
+// //         1. Print the firstname
+//             console.log(person.firstName)
+                
+// //         2. Print the lastname. 
+//             console.log(person.lastName);
+            
+// // 3. Print the fullname("Harry Potter").
+//         console.log(person.firstName+person.lastName);
+        
+// 4. If the age is less than 18, then print "false".If the age is more than 18, then print "true".
+
+        
+//         var person = {
+//             name: "Alice",
+//             age: 30,
+//             hobbies: ["reading", "hiking", "coding"],
+//             isStudent: false
+//         };
+
+//         if(person.age>=18){
+//             console.log("true");            
+//         }
+//         else{
+//             console.log("false");
+            
+//         }
+
+
+
+// // What is Alice's age? 
+// console.log(person.age);
+
+
+
+// // How would you change Alice's city to "Los Angeles"? 
+// person.city= " lossangles "
+
+
+// // How would you add a new property called "occupation" with the value "Software Engineer" ?
+// person.occupation="Software Engineer"
+
+// console.log(person);
+
+
+// // How would you loop through all of Alice's hobbies? 
+//          for(var i =0 ;i<person.hobbies.length;i++){
+//             console.log(person.hobbies[i]);
+            
+//          }
+// // How would you check if the object has a property called "occupation" ? 
+// console.log("occupation"in person);
+
+// //   What is the data type of the isStudent property ?
+// console.log(typeof person.isStudent);
+
+
+
+
+    //            Assignment 3: 
+var person = {
+           name: "Alice",
+            age: 30,
+            city: "New York",
+            hobbies: ["reading", "hiking", "coding"],
+            isStudent: false
+        };
+
+// Basic Level
+
+//         1. Accessing Properties: 
+
+// Write a JavaScript statement to print Alice's age from the person object. 
+// How would you change Alice’s city to "San Francisco" ?
+//             2. Adding & Removing Properties: 
+
+        person.city="san francisco"
+
+
+// Add a new property occupationwith the value "Software Engineer". 
+person.occupation = "software Engineer"
+
+
+// Remove the isStudent property from the person object. 
+// 3. Array Operations: 
+                delete person.isStudent
+
+// Add "swimming" to Alice’s hobbies list.
+// person.hobbies"swimming" 
+person.hobbies.push("swimming")
+// Remove the last hobby from the array. 
+// 4. Looping Through Object: 
+
+// Write a loop to print all properties and their values in the person object.
+for (var i in person){
+    console.log(i +" :"+ person[i]);
+    
+}
+
+
+// Intermediate Level
+
+//         5. Object Methods: 
+
+// Add a method greet() to person that returns "Hello,my name is Alice!". 
+// Modify greet() to dynamically return "Hello,my name is [name] and I am [age] years old!". 
+// 6. Object Destructuring: 
+
+// Use object destructuring to extract name and age from person. 
+// 7. Using this in an Object Method: 
+
+// Add a method displayHobbies()that logs all hobbies in a formatted string. 
+// Advanced Level
+
+//         8. Object Copying & Spread Operator: 
+
+// Create a new object newPersonby copying person but changing the age to 35.
+//         9. Checking Property Existence: 
+
+// Write a function that checks if a given property exists in the person object. 
+// 10. Merging Objects: 
+
+// Merge person with anotherobject { country: "USA", language: "English" }. 
+// Assignment 4:
+//         Here’s a more complex object with nested structures, arrays, and methods: 
+
+//   Const person = {
+
+//             name: "Alice",
+
+//             age: 30,
+
+//             address: {
+
+//                 street: "123 Main St",
+
+//                 city: "New York",
+
+//                 country: "USA"
+
+//             },
+
+//             hobbies: ["reading", "hiking", "coding"],
+
+//             isStudent: false,
+
+//             contacts: [
+
+//                 { type: "email", value: "alice@example.com" },
+
+//                 { type: "phone", value: "+1234567890" }
+
+//             ],
+
+//             skills: {
+
+//                 programming: ["JavaScript", "Python", "Java"],
+
+//                 softSkills: ["communication", "teamwork"]
+
+//             },
+
+//             greet: function () {
+
+//                 return `Hello, my name is ${this.name} and I live in ${this.address.city}.`;
+
+//             },
+
+//             addHobby: function (newHobby) {
+
+//                 this.hobbies.push(newHobby);
+
+//             }
+
+//         };
+
+// Basic Level
+
+// Print Alice's city from the address object. 
+// Add a new contact { type: "LinkedIn", value: "linkedin.com/alice" } to the contacts array. 
+// Change Alice’s country to "Canada". 
+// Print the first programming language Alice knows. 
+// Call the greet() method and display its result. 
+// Intermediate Level
+
+// Add a method displayContacts() that logs all contact types and values. 
+// Write a function that adds a new skill under skills.programming. 
+// Write a function to remove a hobby from the hobbies array. 
+// Loop through skills.programming and print each programming language. 
+// Use object destructuring to extract name and age.
+
+
+
+    </script>
+</body>
+
+</html>

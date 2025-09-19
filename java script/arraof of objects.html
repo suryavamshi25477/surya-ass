@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var people = [
+            {
+                "firstname": "praveen",
+                "lastname": "gubbala",
+                "age": 36,
+                "gender": "male",
+                "city": "hyd",
+                "salary": 10000
+            },
+            {
+                "firstname": "srikanth",
+                "lastname": "gubbala",
+                "age": 32,
+                "gender": "male",
+                "city": "bengaluru",
+                "salary": 20000
+            },
+            {
+                "firstname": "pradeep",
+                "lastname": "reddy",
+                "age": 21,
+                "gender": "male",
+                "city": "hyd",
+                "salary": 25000
+            },
+            {
+                "firstname": "mounika",
+                "lastname": "mudiraj",
+                "age": 20,
+                "gender": "female",
+                "city": "nalgonda",
+                "salary": 30000
+            },
+            {
+                "firstname": "nikhil",
+                "lastname": "m",
+                "age": 22,
+                "gender": "male",
+                "city": "guntur",
+                "salary": 2000
+            },
+            {
+                "firstname": "riya",
+                "lastname": "bhadouria",
+                "age": 14,
+                "gender": "female",
+                "city": "indore",
+                "salary": 40000
+            }
+        ];
+
+
+        //1. Print all the firstnames.
+
+        //  for(var i in people){
+        //     console.log(people[i].firstname);
+
+        //  }
+
+        // 2. Print all the full names.
+        // for(var i in people){
+        //     console.log(people[i].firstname +" "+ people[i].lastname);
+
+        // }
+
+        // 3. Print only those names whose age is more than 25.
+
+        // for (i in people){
+
+        //     if(people[i].age>=25){
+
+        //         console.log(people[i].firstname);
+
+        //     }
+
+        // }
+
+        // 4. Print all female names.
+        // for(var i in people){
+
+        //     if(people[i].gender=="female"){
+
+        //         console.log(people[i]);
+
+        //     }
+        // }
+
+
+        // 5. Print only those names whose salary is more than 25000 and increase their salaries by 15%.
+
+        // for(var i in people){
+
+        //     if(people[i].salary>=25000){
+
+        //        people[i].salary= people[i].salary+(people[i].salary*15)/100
+
+        //         console.log(people[i]);
+
+        //     }
+
+
+
+        // }
+
+
+
+        // 6. Using prompt, print only those names whose city is "hyd".
+
+        // var b=prompt()
+        // for(var i in people){
+
+        //     if(people[i].city== b){
+
+        //         console.log(people[i].firstname+" "+ people[i].lastname);
+
+        //     }
+
+
+        // }
+        // 7. Print the total salary of all the people.
+        // var b=0
+        // for(var i in people ){
+        // b=b+people[i].salary
+
+        // }
+        // console.log(b)
+
+        // 8. Print all the female names.
+        // for(var i in people ){
+        // if(people[i].gender=="female"){
+        //     console.log(people[i].firstname);
+
+        // }
+
+        // }
+
+
+        // 9. Print all the firstnames whose salary is more than 25000.
+
+        // for (var i = 0; i<=people.length-1 ; i++ ){
+
+        //     if(people[i].salary>=25000){
+
+        //         console.log(people[i]);
+
+        //     }
+
+        // }
+
+
+
+
+        // 10. Using prompt, print all names whose city is "hyd".
+        //  .
+        //        var b=[]
+        //         var c=0
+        //        for(var  i in people){
+
+        //         b [c]=people[i].firstname +" "+ people[i].lastname
+        //         c++
+
+        //        }
+
+        // console.log(b);
+
+        // for(var x in b){
+
+        //     if(b[x]>b[x+1]){
+
+
+        //     }
+        // }
+
+        // 13. Print all the fullnames in the reverse alphabetical o{rder.
+
+        // for(var i =0; i<=people.length-1; i++ ){
+        //     //console.log(people[i].firstname);
+            
+        //     for(var j= 0 ; j<people.length-1; j++){
+        //             if(people[j].firstname<people[j+1].firstname){
+        //                 temp=people[j]
+        //                 people[j]=people[j+1]
+        //                 people[j+1]=temp
+                        
+        //             }
+
+        //     }
+
+        // }
+    
+        // for(e in people ){
+        //     console.log(people[e].firstname);
+            
+        // }
+
+        
+
+        // 12. Print all the fullnames in the increasing order of their age.
+
+
+
+        // var arr=[]   
+        // k=0
+        // for(var i in people ){
+        //        // console.log(people[i].age);
+        //         arr[k]=people[i].age
+        //         k++
+
+        //     }
+        //     console.log(arr);
+             
+            
+            
+            
+        //     for(var a =0;a<= arr.length-1;a++ ){
+        //     for( var j =0;j<= arr.length-1;j++  ){
+               
+        //             if(arr[a]>arr[a+1]){
+
+        //                 var temp = arr[a]
+        //                 arr[a]=arr[a+1]
+        //                 arr[a+1]=temp
+        //             }
+
+        //         }
+        //     }
+        //     for( y in people){
+        //     for(var z= 0;z<=arr.length-1 ;z++ ){
+                
+
+        //             if(arr[z]=== people[y].age ){
+
+        //                 console.log(people[y].firstname+" "+people[y].age);
+                        
+        //             }
+        //         }
+
+        //     }
+            
+
+                // 14. Print all the fullnames in the decreasing order of their salaries.
+
+
+
+
+        // 15. Print all the cities in which the people live. There should not be any duplicate cities.
+
+        // var b = []
+        // var c = 0
+        // for (var i in people) {
+        //     b[c] = people[i].city
+        //     c++
+        // }
+
+        // var d = []
+        // var z = 0
+        // for (var x = 0; x <= b.length - 1; x++) {
+
+        //     var f = 0
+        //     for (var y = 0; y <= d.length - 1; y++) {
+
+        //         if (b[x] == d[y]) {
+        //             f++
+        //         }
+        //     }
+        //     if (f == 0) {
+        //             d[z]=b[x]
+        //         z++
+        //     }
+        // }
+
+
+        // console.log(d);
+
+        // 16. Print all the male names whose age is greater than 25.
+        // 17. Print all names that starts with "p" and the firstname should be in UPPERCASE. e.g. PRAVEEN
+        // Gubbala
+        // 18. Print the average age of all students
+
+
+
+
+    </script>
+</body>
+
+</html>
